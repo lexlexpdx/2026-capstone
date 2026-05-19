@@ -1,4 +1,4 @@
-# Spring/Summer 2026 Captsone Project
+# Spring/Summer 2026 Capstone Project
 
 ## Sprint 3 repository structure information
 
