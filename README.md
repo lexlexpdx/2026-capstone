@@ -144,3 +144,12 @@ After your pull request is reviewed, merge the pull request
 1. [Git switch documentation](https://git-scm.com/docs/git-switch)
 2. [Git pull documentation](https://git-scm.com/docs/git-pull)
 3. [Git push documentation](https://git-scm.com/docs/git-push)
+
+# Note on CSS color sheet
+
+If you need to use any colors that are part of The Blueprint Foundation's branded
+colors, you can find them in the project repository:
+
+`2026-capstone/src/resources/css/colors.css`
+
+If you want to see how TBF has used their colors, please check out their [website](https://www.theblueprintfoundation.org/).
