@@ -1,0 +1,20 @@
+/*******************************************************************************
+File name: colors.css
+Author: Lex Albrandt
+
+Purpose: This file is for CSS color definitions for the Spring/Summer 2026 Change is
+         in the Air Capstone project. It includes brand colors for The Blueprint 
+         Foundation (TBF) as well as global styling colors for the website
+*******************************************************************************/
+
+:root {
+	/* TBF brand colors */
+	--color-tbf1: #03478b;
+	--color-tbf2: #c9dc62;
+	--color-tbf3: #367639;
+	--color-tbf4: #a4c8e3;
+	--color-tbf5: #6cae47;
+	--color-tbf6: #3e87bb;
+	--color-tbf7: #392ffc;
+	--color-tbf8: #011c3d;
+}
