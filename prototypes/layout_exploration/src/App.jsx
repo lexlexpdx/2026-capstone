@@ -1,5 +1,11 @@
+import Navbar from "./Navbar.jsx";
+
 function App() {
-	return <div></div>;
+	return (
+		<div>
+			<Navbar />
+		</div>
+	);
 }
 
 export default App;
