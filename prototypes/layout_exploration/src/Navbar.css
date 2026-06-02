@@ -1,0 +1,77 @@
+/* 
+File: Navbar.css
+Author: Lex Albrandt
+Purpose: CSS styling for React Navbar component
+ */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	background: var(--color-tbf1);
+	position: sticky;
+	top: 0;
+	box-shadow: 0 5px 5px black;
+}
+
+.navbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 0.2rem;
+	position: relative;
+}
+
+.navbar-toggle {
+	display: block;
+	background: transparent;
+	padding-right: 0.5rem;
+	border: none;
+}
+
+.navbar-container .navbar-menu {
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	top: 3rem;
+	right: 0;
+	padding: 2rem 1.5rem;
+	width: 10rem;
+	background: var(--color-tbf1);
+	opacity: 0.8;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px black;
+}
+
+.navbar-container h1 {
+	font-family: "Roboto", sans-serif;
+	color: var(--color-tbf5);
+	padding: 0.5rem;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	background: var(--color-tbf5);
+	box-shadow: 0 2px 5px black;
+}
+
+.navbar-container .navbar-menu li {
+	color: var(--color-tbf5);
+	font-size: 1.3rem;
+	font-weight: 500;
+	padding: 3px 15px;
+	border-radius: 20px;
+	text-shadow: 0 2px 2px black;
+}
+
+.navbar-container .navbar-menu.active {
+	display: flex;
+	padding-left: 2.5rem;
+	padding-right: 1rem;
+}
