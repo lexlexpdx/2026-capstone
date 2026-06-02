@@ -46,7 +46,7 @@ Purpose: CSS styling for React Navbar component
 	box-shadow: 0 10px 10px black;
 }
 
-.navbar-container h1 {
+.navbar-container {
 	font-family: "Roboto", sans-serif;
 	color: var(--color-tbf5);
 	padding: 0.5rem;
@@ -74,4 +74,37 @@ Purpose: CSS styling for React Navbar component
 	display: flex;
 	padding-left: 2.5rem;
 	padding-right: 1rem;
+}
+
+/* 
+Responsive styles
+ */
+
+@media (min-width: 880px) {
+	.navbar {
+		height: 100px;
+	}
+
+	.navbar-container .navbar-menu {
+		display: flex;
+		position: static;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1.5rem;
+		background: transparent;
+		border-radius: 0;
+		box-shadow: none;
+		flex-direction: row;
+		text-align: center;
+		list-style: none;
+		font-size: 2rem;
+	}
+
+	.navbar-toggle {
+		display: none;
+	}
+
+	.bar {
+		display: none;
+	}
 }

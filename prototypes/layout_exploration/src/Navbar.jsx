@@ -28,7 +28,7 @@ export default function Navbar() {
 				</button>
 				<ul className={isMenuOpen ? "navbar-menu active" : "navbar-menu"}>
 					<li>Home</li>
-					<li>Your Neighborhood AQI</li>
+					<li>Your Air Quality</li>
 					<li>Learn More</li>
 					<li>The Blueprint Foundation</li>
 				</ul>
