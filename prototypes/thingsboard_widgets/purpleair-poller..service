@@ -1,0 +1,16 @@
+[Unit]
+Description=PurpleAir to ThingsBoard Poller
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=max
+ExecStart=/usr/bin/python3 /home/max/purpleair_to_tb_mk4.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
