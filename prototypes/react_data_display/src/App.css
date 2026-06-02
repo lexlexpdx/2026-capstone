@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.app {
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.sensor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 8px solid gray;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sensor-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.location {
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.sensor-data p {
+  margin: 8px 0;
+}
+
+.status {
+  margin-top: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status span {
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Conditional styling */
+.sensor-card.good {
+  border-left-color: #2e7d32;
+}
+
+.sensor-card.good .status span {
+  background-color: #d8f3dc;
+  color: #2e7d32;
+}
+
+.sensor-card.average {
+  border-left-color: #f9a825;
+}
+
+.sensor-card.average .status span {
+  background-color: #fff3cd;
+  color: #8a6d00;
+}
+
+.sensor-card.poor {
+  border-left-color: #c62828;
+}
+
+.sensor-card.poor .status span {
+  background-color: #ffd6d6;
+  color: #c62828;
+}
+
+.alert-widget {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.good-alert {
+  background-color: #d8f3dc;
+  color: #2e7d32;
+}
+
+.poor-alert {
+  background-color: #ffd6d6;
+  color: #c62828;
+}
