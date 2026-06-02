@@ -4,9 +4,69 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Team 1 - Layout Exploration Prototype</title>
+		<link rel="stylesheet" href="/src/index.css" />
 	</head>
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
+
+		<header class="hero-container">
+			<div class="hero-background">
+				<img src="Portland.png" alt="Background"/>
+			</div>
+
+			<div class="banner-footer">
+				<div class="search-bar">
+					<input type="text" placeholder="Search your address" />
+				</div>
+			</div>
+		
+			<div class="title-container">
+				<div class="text-group">
+					<h1 class="title-text">Change is in the Air</h1>
+					<h2 class="subtitle-text">Portland Metropolitan AQI</h2>
+				</div>
+				<div class="aqi-container">
+					<div class="aqi-box">
+						<h3 class="aqi-title">Current AQI</h3>
+						<p class="aqi-value">34</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-grid">
+				<div class="card">
+					<p class="card-label">PM2.5</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">µg/m³</p>
+				</div>
+				<div class="card">
+					<p class="card-label">PM10</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">µg/m³</p>
+				</div>
+				<div class="card">
+					<p class="card-label">Ozone (O₃)</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">ppb</p>
+				</div>
+				<div class="card">
+					<p class="card-label">Carbon Monoxide (CO)</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">ppm</p>
+				</div>
+				<div class="card">
+					<p class="card-label">Nitrogen Dioxide (NO₂)</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">ppb</p>
+				</div>
+				<div class="card">
+					<p class="card-label">Sulfur Dioxide (SO₂)</p>
+					<p class="card-value">--</p>
+					<p class="card-unit">ppb</p>
+				</div>
+			</div>
+
+    	</header>
 	</body>
 </html>
