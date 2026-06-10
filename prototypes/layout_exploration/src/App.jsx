@@ -1,11 +1,11 @@
-import Navbar from "./Navbar.jsx";
+import Hero from './Components/Hero'
+import Navbar from './Navbar.jsx'
 
-function App() {
+export default function App() {
 	return (
 		<div>
-			<Navbar />
+      <Navbar />
+			<Hero />
 		</div>
-	);
+	)
 }
-
-export default App;
