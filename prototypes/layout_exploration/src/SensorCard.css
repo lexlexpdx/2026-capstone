@@ -1,0 +1,142 @@
+/*******************************************************************************
+File name: SensorCard.css
+
+Purpose: Styles for the SensorCard component. Uses TBF brand colors from
+         colors.css and applies conditional styling based on air quality status.
+*******************************************************************************/
+
+.sensor-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sensor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sensor-card--good {
+  border-left-color: var(--color-tbf5);
+}
+
+.sensor-card--average {
+  border-left-color: var(--color-tbf2);
+}
+
+.sensor-card--poor {
+  border-left-color: #c0392b;
+}
+
+.sensor-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sensor-card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-tbf8);
+  margin: 0;
+}
+
+.sensor-card__meta {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.sensor-card__badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: var(--color-tbf4);
+  color: var(--color-tbf8);
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sensor-card__status {
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+}
+
+.sensor-card__status--good {
+  background-color: #eaf6e8;
+}
+
+.sensor-card__status--average {
+  background-color: #fdf8e1;
+}
+
+.sensor-card__status--poor {
+  background-color: #fdecea;
+}
+
+.sensor-card__status-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.sensor-card__status--good .sensor-card__status-label {
+  color: var(--color-tbf3);
+}
+
+.sensor-card__status--average .sensor-card__status-label {
+  color: #856500;
+}
+
+.sensor-card__status--poor .sensor-card__status-label {
+  color: #c0392b;
+}
+
+.sensor-card__status-description {
+  font-size: 0.78rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sensor-card__readings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.sensor-card__reading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f8fb;
+  border-radius: 8px;
+  padding: 0.5rem 0.25rem;
+}
+
+.sensor-card__reading-label {
+  font-size: 0.65rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.sensor-card__reading-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-tbf1);
+}
+
+.sensor-card__reading-unit {
+  font-size: 0.6rem;
+  color: #aaa;
+}
